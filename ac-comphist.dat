@@ -1,0 +1,38 @@
+((("x" .
+   [1])
+  ("minimize" .
+   [0 0 0 0 1 0 0 0])
+  ("optimize" .
+   [0 0 0 0 1 0 0 0])
+  ("import" .
+   [0 0 0 0 1 0])
+  ("scipy" .
+   [0 0 0 0 2])
+  ("python-cell-mode" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("lambda" .
+   [0 0 0 1 0 0])
+  ("python-mode-hook" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("add-hook" .
+   [0 0 0 0 0 0 0 1])
+  ("python-cell" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("PASSWORD" .
+   [0 0 0 1 0 0 0 0])
+  ("USER" .
+   [0 1 0 0])
+  ("DB_NAME" .
+   [0 0 1 0 0 0 0])
+  ("PORT" .
+   [0 1 0 0])
+  ("SERVER" .
+   [0 0 1 0 0 0])
+  ("prelude-require-package" .
+   [0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("require" .
+   [0 0 0 1 2 0 0])
+  ("auto-complete-mode" .
+   [0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1])
+  ("jedi:ac-setup" .
+   [0 0 1 0 0 0 0 1 0 0 1 0 0])))
