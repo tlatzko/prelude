@@ -8,11 +8,10 @@
 ;; activate yasnippet global
 (yas-global-mode 1)
 
-(ac-flyspell-workaround)
 (global-auto-complete-mode t)
 ;; Inline auto completion and suggestions
-
 (powerline-default-theme)
+
 ;aspell und flyspell
 (setq-default ispell-program-name "aspell")
 ; use key chords invoke commands
