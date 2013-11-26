@@ -1,7 +1,7 @@
 ;; orgmode
 (add-hook 'org-mode-hook 'flyspell-mode)
-
-
+(add-hook 'org-mode-hook 'turn-on-visual-line-mode)
+(setq org-clock-continuously t)
 ; http://orgmode.org/guide/Activation.html#Activation
 (defun my-org-confirm-babel-evaluate (lang body)
             (not (string= lang "python")))  ; don't ask for python
@@ -9,6 +9,8 @@
 
 ; The following lines are always needed.  Choose your own keys.
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+
+
 ; And add babel inline code execution
 ; babel, for executing code in org-mode.
 (org-babel-do-load-languages
@@ -55,4 +57,3 @@
    (shen)
    (sql)
    (sqlite)))
-

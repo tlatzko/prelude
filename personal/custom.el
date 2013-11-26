@@ -3,11 +3,12 @@
      ;; If you edit it by hand, you could mess it up, so be careful.
      ;; Your init file should contain only one such instance.
      ;; If there is more than one, they won't work right.
-     
+
     ; Add proper word wrapping
     ; (global-visual-line-mode t)
 
     '(org-agenda-files '("/home/latzko/phd/memo/"))
+    '(whitespace-line-column 250)
     '(org-agenda-include-all-todo t)
     '(org-agenda-include-diary t)
     '(org-agenda-skip-deadline-if-done t)

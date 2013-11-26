@@ -34,10 +34,11 @@
 ;;enable jedi autocompletion in python
 
 (autoload 'jedi:setup "jedi" nil t)
-(setq jedi:setup-keys t)
+; (setq jedi:setup-keys t)
 (add-hook 'python-mode-hook
           (lambda()
             (auto-complete-mode 1)
+            (jedi:setup)
             (jedi:ac-setup)
             (python-cell-mode 1)
             (guru-mode -1)))

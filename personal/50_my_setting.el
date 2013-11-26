@@ -2,6 +2,7 @@
 ;; my own stuff
 ;; setup
 
+
 (setq projectile-completion-system 'grizzl)
 
 
@@ -15,7 +16,6 @@
 ;aspell und flyspell
 (setq-default ispell-program-name "aspell")
 ; use key chords invoke commands
-
 (key-chord-mode 1)
 ; buffer actions
 (key-chord-define-global "vg"     'eval-region)
@@ -24,6 +24,7 @@
 (key-chord-define-global "cg"     "\C-c\C-c")
 ; frame actions
 (key-chord-define-global "xo"     'other-window);
+(key-chord-define-global "bb"     'other-window);
 (key-chord-define-global "x1"     'delete-other-windows)
 (key-chord-define-global "x0"     'delete-window)
 (defun kill-this-buffer-if-not-modified ()

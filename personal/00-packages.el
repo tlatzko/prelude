@@ -1,3 +1,4 @@
+;;; start package handling
 ;; packages
 (prelude-require-package 'grizzl)
 (prelude-require-package 'auto-complete)
@@ -8,6 +9,8 @@
 (prelude-require-package 'flymake-cursor)
 (prelude-require-package 'jedi)
 (prelude-require-package 'python-cell)
+(prelude-require-package 'tuareg)
+(require 'tuareg)
 (require 'python-cell)
 (require 'grizzl)
 (require 'auto-complete)
@@ -17,3 +20,4 @@
 (require 'powerline)
 (require 'jedi)
 (require 'flymake-cursor)
+;;; end

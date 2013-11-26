@@ -1,3 +1,5 @@
+Forked from https://github.com/bbatsov/prelude.git
+
 Emacs Prelude
 =============
 
