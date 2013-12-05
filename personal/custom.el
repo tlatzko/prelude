@@ -8,7 +8,7 @@
     ; (global-visual-line-mode t)
 
     '(org-agenda-files '("/home/latzko/phd/memo/"))
-    '(whitespace-line-column 250)
+    '(whitespace-line-column 1000000)
     '(org-agenda-include-all-todo t)
     '(org-agenda-include-diary t)
     '(org-agenda-skip-deadline-if-done t)
