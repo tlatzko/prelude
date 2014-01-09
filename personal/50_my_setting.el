@@ -10,6 +10,8 @@
 (yas-global-mode 1)
 
 (global-auto-complete-mode t)
+(setq prelude-whitespace nil)
+
 ;; Inline auto completion and suggestions
 (powerline-default-theme)
 
