@@ -5,7 +5,9 @@
  ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
  '(column-number-mode t)
- '(org-agenda-files (quote ("/home/latzko/phd/memo/")))
+ '(org-agenda-files
+   (quote
+    ("~/phd/othesis/think.org" "/home/latzko/phd/memo/plan.org")))
  '(org-agenda-include-all-todo t)
  '(org-agenda-include-diary t)
  '(org-agenda-skip-deadline-if-done t)
@@ -88,7 +90,7 @@
     ("pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f" "bibtex $(basename %b)" "pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f" "pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f")))
  '(org-latex-to-pdf-process
    (quote
-    ("pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f" "bibtex $(basename %b)" "pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f" "pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f")))
+    ("pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f" "bibtex $(basename %b)" "pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f" "pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f")) t)
  '(org-remember-templates
    (quote
     (("todo" 116 "?: %? ~/.emacs.d/private/org/emacs-plan.org" nil nil)

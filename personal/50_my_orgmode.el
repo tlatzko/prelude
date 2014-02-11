@@ -104,5 +104,17 @@
         "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
         "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
 
+(setq-default TeX-master t)
+(setq reftex-default-bibliography
+      (quote
+       ("/home/latzko/phd/othesis/bib/literatur_phd.bib")))
 
+(defun na-org-mode-reftex-setup ()
+  (interactive)
+  (load-library "reftex")
+  (and (buffer-file-name)
+       (file-exists-p (buffer-file-name))
+       (reftex-parse-all)))
 
+(add-hook 'org-mode-hook 'na-org-mode-reftex-setup)
+(add-hook 'org-mode-hook 'reftex-mode)
