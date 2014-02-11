@@ -117,4 +117,4 @@
        (reftex-parse-all)))
 
 (add-hook 'org-mode-hook 'na-org-mode-reftex-setup)
-(add-hook 'org-mode-hook 'reftex-mode)
+;; (add-hook 'org-mode-hook 'reftex-mode)
