@@ -11,6 +11,37 @@
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
 
+;; setup the latex export packages
+(setq org-export-latex-default-packages-alist
+      (quote
+       (("AUTO" "inputenc" t)
+        ("" "fixltx2e" nil)
+        ("" "url")
+        ("" "graphicx" t)
+        ("" "minted" t)
+        ("" "color" t)
+        ("" "longtable" nil)
+        ("" "float" nil)
+        ("" "wrapfig" nil)
+        ("" "soul" t)
+        ("" "textcomp" t)
+        ("" "amsmath" t)
+        ("" "marvosym" t)
+        ("" "wasysym" t)
+        ("" "latexsym" t)
+        ("" "amssymb" t)
+        ("linktocpage,
+          pdfstartview=FitH,
+          colorlinks,
+          linkcolor=blue,
+          anchorcolor=blue,
+          citecolor=blue,
+          filecolor=blue,
+          menucolor=blue,
+           urlcolor=blue" "hyperref" t)
+        ("" "attachfile" t)
+        "\\tolerance=1000")))
+
 ; And add babel inline code execution
 ; babel, for executing code in org-mode.
 (org-babel-do-load-languages
@@ -57,3 +88,21 @@
    (shen)
    (sql)
    (sqlite)))
+
+(setq org-export-babel-evaluate nil) ; do not evaluate on export
+
+;; code for syntax highlighting
+(setq org-latex-listings 'minted)
+(setq org-export-latex-minted-options
+           '(("frame" "lines")
+             ("fontsize" "\\scriptsize")
+             ("linenos" "")))
+
+(setq org-latex-to-pdf-process
+      '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "bibtex %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+
+
+

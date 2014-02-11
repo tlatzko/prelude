@@ -41,13 +41,8 @@
             (jedi:setup)
             (jedi:ac-setup)
             (python-cell-mode 1)
-<<<<<<< HEAD
             (guru-mode -1)
             (linum-mode 1)))
-=======
-            (linum-mode 1)
-            (guru-mode -1)))
->>>>>>> 03fd32e32dc797ed3c98860bce915b64b98d118a
 
 ;(add-hook 'python-mode-hook 'auto-complete-mode)
 ;(add-hook 'python-mode-hook 'jedi:ac-setup)

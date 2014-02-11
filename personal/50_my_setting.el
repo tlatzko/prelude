@@ -4,7 +4,7 @@
 
 
 (setq projectile-completion-system 'grizzl)
-
+;; (setq langtool-language-tool-jar "/usr/local/languagetool/languagetool-commandline.jar")
 
 ;; activate yasnippet global
 (yas-global-mode 1)
@@ -13,7 +13,7 @@
 (setq prelude-whitespace nil)
 
 ;; Inline auto completion and suggestions
-(powerline-default-theme)
+;(powerline-default-theme)
 
 ;aspell und flyspell
 (setq-default ispell-program-name "aspell")

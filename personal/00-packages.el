@@ -38,6 +38,9 @@
 (prelude-require-package 'jedi)
 (prelude-require-package 'python-cell)
 (prelude-require-package 'tuareg)
+
+;;(prelude-require-package 'langtool)
+;; (require 'langtool)
 (require 'tuareg)
 (require 'python-cell)
 (require 'grizzl)
