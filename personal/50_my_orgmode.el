@@ -93,7 +93,7 @@
 
 ;; code for syntax highlighting
 (setq org-latex-listings 'minted)
-(setq org-export-latex-minted-options
+(setq org-latex-minted-options
            '(("frame" "lines")
              ("fontsize" "\\scriptsize")
              ("linenos" "")))
