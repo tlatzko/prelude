@@ -48,7 +48,7 @@
  'org-babel-load-languages
  ; load all language marked with (lang . t).
  '((C . t)
-   (R . t)
+   (R)
    (asymptote)
    (awk)
    (calc)
@@ -90,7 +90,7 @@
    (sqlite)))
 
 (setq org-export-babel-evaluate nil) ; do not evaluate on export
-
+(setq org-src-window-setup 'current-window)
 ;; code for syntax highlighting
 (setq org-latex-listings 'minted)
 (setq org-latex-minted-options

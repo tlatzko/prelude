@@ -13,7 +13,7 @@
 (setq prelude-whitespace nil)
 
 ;; Inline auto completion and suggestions
-;(powerline-default-theme)
+(powerline-default-theme)
 
 ;aspell und flyspell
 (setq-default ispell-program-name "aspell")
