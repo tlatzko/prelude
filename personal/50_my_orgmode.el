@@ -119,4 +119,4 @@
 (add-hook 'org-mode-hook 'na-org-mode-reftex-setup)
 ;; (add-hook 'org-mode-hook 'reftex-mode)
 
-(setq org-babel-python-command "ipython --no-banner --no-confirm-exit")
+(setq org-babel-python-command "ipython --no-banner --classic --no-confirm-exit")
