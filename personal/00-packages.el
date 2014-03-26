@@ -3,6 +3,7 @@
 ;; el-get installation
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
+
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
       (url-retrieve-synchronously
@@ -41,6 +42,7 @@
 (prelude-require-package 'cython-mode)
 (package-require 'powerline)
 (package-require 'emmet-mode)
+(package-require 'o-blog)
 ;; (package-require 'python-mode)
 ;;(prelude-require-package 'langtool)
 ;; (require 'langtool)
@@ -54,8 +56,10 @@
 (require 'yasnippet)
 (require 'key-chord)
 ;; not required emmet(require 'zencoding-mode)
+;; (require 'o-blog)
 (require 'powerline)
 (require 'jedi)
 (require 'flymake-cursor)
 (require 'emmet-mode)
+
 ;;; end
