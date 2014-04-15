@@ -26,7 +26,7 @@
 (key-chord-define-global "cy"     'yank-pop)
 
 ; frame actions
-(key-chord-define-global "bn"     'other-window);
+(key-chord-define-global "nn"     'other-window);
 (key-chord-define-global "b1"     'delete-other-windows)
 (key-chord-define-global "b0"     'delete-window)
 (defun kill-this-buffer-if-not-modified ()
