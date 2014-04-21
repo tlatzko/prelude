@@ -1,8 +1,8 @@
 ;;; misc settings mot global
 ;; my own stuff
 ;; setup
-(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
-(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+;(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+;(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 
 (setq projectile-completion-system 'grizzl)
 ;; (setq langtool-language-tool-jar "/usr/local/languagetool/languagetool-commandline.jar")
