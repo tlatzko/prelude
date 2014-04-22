@@ -41,12 +41,8 @@
 (prelude-require-package 'tuareg)
 ;; (prelude-require-package 'cython-mode)
 (package-require 'powerline)
-<<<<<<< HEAD
-;;(package-require 'emmet-mode)
-=======
-(package-require 'emmet-mode)
-(package-require 'o-blog)
->>>>>>> e6aade85fd75191dd8113ce07e19713d3ae8ff48
+;; (package-require 'emmet-mode)
+;; (package-require 'o-blog)
 ;; (package-require 'python-mode)
 ;;(prelude-require-package 'langtool)
 ;; (require 'langtool)
@@ -64,10 +60,5 @@
 (require 'powerline)
 (require 'jedi)
 (require 'flymake-cursor)
-<<<<<<< HEAD
-; (require 'emmet-mode)
-=======
-(require 'emmet-mode)
 
->>>>>>> e6aade85fd75191dd8113ce07e19713d3ae8ff48
 ;;; end
