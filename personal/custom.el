@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
  '(column-number-mode t)
- '(org-agenda-files (quote ("/home/latzko/phd/memo/plan.org")))
+ '(org-agenda-files (quote ("~/phd/memo/plan.org")))
  '(org-agenda-include-all-todo t)
  '(org-agenda-include-diary t)
  '(org-agenda-skip-deadline-if-done t)
