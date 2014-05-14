@@ -3,15 +3,35 @@
 ;; setup
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
-
+(setq prelude-whitespace nil)
 (setq projectile-completion-system 'grizzl)
 ;; (setq langtool-language-tool-jar "/usr/local/languagetool/languagetool-commandline.jar")
 
 ;; activate yasnippet global
 (yas-global-mode 1)
 
+
+;; this sections is for autocompletion
 (global-auto-complete-mode t)
-(setq prelude-whitespace nil)
+
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(ac-config-default)
+
+;(ac-set-trigger-key "TAB")
+;(ac-set-trigger-key "<tab>")
+(setq ac-quick-help-delay 0.5)
+(define-key ac-mode-map  [(control tab)] 'auto-complete)
+(defun my-ac-config ()
+  (setq-default ac-sources '(ac-source-abbrev ac-source-dictionary ac-source-words-in-same-mode-buffers))
+  (add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode-setup)
+  (add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
+  (add-hook 'css-mode-hook 'ac-css-mode-setup)
+  (add-hook 'auto-complete-mode-hook 'ac-common-setup)
+  (global-auto-complete-mode t))
+
+;; ac-source-gtags
+(my-ac-config)
+
 
 ;; Inline auto completion and suggestions
 (powerline-default-theme)
