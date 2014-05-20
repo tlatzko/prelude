@@ -46,7 +46,7 @@
 (key-chord-define-global "cy"     'yank-pop)
 
 ; frame actions
-(key-chord-define-global "nn"     'other-window);
+(key-chord-define-global ",,"     'other-window);
 (key-chord-define-global "b1"     'delete-other-windows)
 (key-chord-define-global "b0"     'delete-window)
 (defun kill-this-buffer-if-not-modified ()
@@ -59,7 +59,7 @@
 ; file actions
 (key-chord-define-global "bf"     'ido-switch-buffer)
 (key-chord-define-global "cf"     'ido-find-file)
-(key-chord-define-global "vc"     'vc-next-action)
+; (key-chord-define-global "vc"     'vc-next-action)
 (key-chord-define-global "jj" 'ace-jump-word-mode)
 (key-chord-define-global "jl" 'ace-jump-line-mode)
 (key-chord-define-global "jk" 'ace-jump-char-mode)
