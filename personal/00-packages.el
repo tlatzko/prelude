@@ -51,7 +51,7 @@
 ;; (require 'ein)
 (require 'auto-complete-config)
 (require 'auto-complete-clang)
-
+(require 'evil)
 (require 'python)
 (require 'tuareg)
 (require 'cython-mode)

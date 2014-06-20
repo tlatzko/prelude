@@ -35,7 +35,10 @@
 
 ;; Inline auto completion and suggestions
 (powerline-default-theme)
-
+(setq prelude-guru nil)
+(evil-mode 1)
+(global-linum-mode 1)
+(setq evil-want-C-u-scroll t)
 ;aspell und flyspell
 (setq-default ispell-program-name "aspell")
 ; use key chords invoke commands
@@ -60,9 +63,9 @@
 (key-chord-define-global "bf"     'ido-switch-buffer)
 (key-chord-define-global "cf"     'ido-find-file)
 ; (key-chord-define-global "vc"     'vc-next-action)
-(key-chord-define-global "jj" 'ace-jump-word-mode)
-(key-chord-define-global "jl" 'ace-jump-line-mode)
-(key-chord-define-global "jk" 'ace-jump-char-mode)
+; (key-chord-define-global "ss" 'ace-jump-word-mode)
+;(key-chord-define-global "sd" 'ace-jump-line-mode)
+;(key-chord-define-global "sa" 'ace-jump-char-mode)
 (key-chord-define-global "JJ" 'prelude-switch-to-previous-buffer)
 (key-chord-define-global "uu" 'undo-tree-visualize)
 (key-chord-define-global "xx" 'execute-extended-command)
