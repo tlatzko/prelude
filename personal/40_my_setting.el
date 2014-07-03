@@ -1,9 +1,15 @@
 ;;; misc settings mot global
 ;; my own stuff
 ;; setup
+<<<<<<< HEAD:personal/40_my_setting.el
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 (setq prelude-whitespace nil)
+=======
+;(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+;(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+
+>>>>>>> 51d7a7b11989253b135bf383767ca62cee87f8ed:personal/50_my_setting.el
 (setq projectile-completion-system 'grizzl)
 ;; (setq langtool-language-tool-jar "/usr/local/languagetool/languagetool-commandline.jar")
 

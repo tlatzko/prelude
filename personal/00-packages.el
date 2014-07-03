@@ -39,12 +39,17 @@
 (prelude-require-package 'jedi)
 (prelude-require-package 'python-cell)
 (prelude-require-package 'tuareg)
-(prelude-require-package 'cython-mode)
+;; (prelude-require-package 'cython-mode)
 (package-require 'powerline)
+<<<<<<< HEAD
 (package-require 'emmet-mode)
 (prelude-require-package 'auto-complete-clang)
 ;; (package-require 'o-blog)p
 ;; (package-require 'tiling)
+=======
+;; (package-require 'emmet-mode)
+;; (package-require 'o-blog)
+>>>>>>> 51d7a7b11989253b135bf383767ca62cee87f8ed
 ;; (package-require 'python-mode)
 ;;(prelude-require-package 'langtool)
 ;; (require 'langtool)
@@ -54,7 +59,7 @@
 (require 'evil)
 (require 'python)
 (require 'tuareg)
-(require 'cython-mode)
+;; (require 'cython-mode)
 (require 'python-cell)
 (require 'grizzl)
 (require 'auto-complete)
@@ -65,6 +70,5 @@
 (require 'powerline)
 (require 'jedi)
 (require 'flymake-cursor)
-(require 'emmet-mode)
 
 ;;; end
