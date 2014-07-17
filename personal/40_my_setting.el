@@ -1,15 +1,12 @@
 ;;; misc settings mot global
 ;; my own stuff
 ;; setup
-<<<<<<< HEAD:personal/40_my_setting.el
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 (setq prelude-whitespace nil)
-=======
 ;(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 ;(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 
->>>>>>> 51d7a7b11989253b135bf383767ca62cee87f8ed:personal/50_my_setting.el
 (setq projectile-completion-system 'grizzl)
 ;; (setq langtool-language-tool-jar "/usr/local/languagetool/languagetool-commandline.jar")
 
@@ -69,9 +66,9 @@
 (key-chord-define-global "bf"     'ido-switch-buffer)
 (key-chord-define-global "cf"     'ido-find-file)
 ; (key-chord-define-global "vc"     'vc-next-action)
-; (key-chord-define-global "ss" 'ace-jump-word-mode)
-;(key-chord-define-global "sd" 'ace-jump-line-mode)
-;(key-chord-define-global "sa" 'ace-jump-char-mode)
+(key-chord-define-global "AA" 'ace-jump-word-mode)
+; (key-chord-define-global "sd" 'ace-jump-line-mode)
+(key-chord-define-global "SS" 'ace-jump-char-mode)
 (key-chord-define-global "JJ" 'prelude-switch-to-previous-buffer)
 (key-chord-define-global "uu" 'undo-tree-visualize)
 (key-chord-define-global "xx" 'execute-extended-command)
