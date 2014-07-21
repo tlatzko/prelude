@@ -50,7 +50,7 @@
 ;; (package-require 'python-mode)
 ;;(prelude-require-package 'langtool)
 ;; (require 'langtool)
-;; (require 'ein)
+(require 'ein)
 (require 'auto-complete-config)
 (require 'auto-complete-clang)
 (require 'evil)
