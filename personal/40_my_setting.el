@@ -14,6 +14,9 @@
 (yas-global-mode 1)
 
 
+;; language tool 
+(setq langtool-language-tool-jar "/usr/local/LanguageTool-2.6/languagetool-commandline.jar")
+
 ;; this sections is for autocompletion
 (global-auto-complete-mode t)
 
@@ -37,7 +40,7 @@
 
 
 ;; Inline auto completion and suggestions
-(powerline-default-theme)
+;(powerline-default-theme)
 (setq prelude-guru nil)
 (evil-mode 1)
 (global-linum-mode 1)
