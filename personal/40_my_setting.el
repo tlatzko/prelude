@@ -42,7 +42,7 @@
 ;; Inline auto completion and suggestions
 ;(powerline-default-theme)
 (setq prelude-guru nil)
-(evil-mode 1)
+;(evil-mode 1)
 (global-linum-mode 1)
 (setq evil-want-C-u-scroll t)
 ;aspell und flyspell
